@@ -1,0 +1,62 @@
+
+
+Purpose:
+
+Battle Game allows users to fight opponents and earn gold with which they can upgrade their hero. Starting off heros can only defeat level 1 opponents. The challenge of the game is to advance to beating harder opponents, the highest level of opponent is level 10. If the user is ambitious and starts off at a higher level, they will most certainly die and end progression. 
+
+
+Design:
+
+Battle Game is run by BattleGameDriver.cpp which interfaces with the HeroType and EnemyType classes.
+
+Both HeroType and EnemyType objects use unordered maps to organize their 
+attributes. Unordered Maps are ideal for this purpose because they allow for fast and easy storage and retrieval of key-value pairs. For Battle Game combatants have battle specific qualities (Ex: Strength, Agility...) which need to be referenced by name and these qualities have associated values. The name of these qualities are keys in the unordered map and their respective values are the corresponding values in the key-value relationship.
+
+Battle Game allows players to battle numerous enemies sequentially at one time. To facilitate this feature  enemies are stored in a vector called EnemyLineUp. A vector data structure is useful for this purpose because enemies can easily be added or removed from a vector and vectors can easily be Cleared.
+
+
+Contributions:
+
+Both partners contributed equally in terms of work and effort. We both contributed equally to the idea of the game and then focused on different parts during the programming. Elisa wrote the switch case log for hero selection, HeroType class and the make purchases function. Mike wrote the EnemyType ,wrote the unordered_map data structure allocating attribute values, created the vector object for organising the enemies, and wrote the battle function. Both partners spent considerable time debugging and making adjustments to each other’s code. Both partners contributed to main. 
+
+
+
+
+
+Log:
+
+11/13 		Planning
+
+11/14 		Rough layout, adventure-based RPG idea involving choosing paths to an objective, fighting monsters
+
+11/15 		Change of plans, students chose battle-based RPG
+
+11/17 		Refactoring, created switch case logic for hero selection, creating unordered map data structure, and setting attribute values, planned sequence of game
+
+11/20 		Wrote most of main function/layout, wrote pre and post function explanations
+
+11/21 		Created EnemyType objects, wrote battle function, debugging
+
+11/22-26	Both students on Thanksgiving break with families, debugging
+
+11/27 		Debugging, (make hero.health work properly)
+
+11/28 		Wrote make purchases function, played game and made adjustments.
+
+12/1 		Debugging
+
+12/2 		Debugging, comments
+
+
+
+
+Creator's Reflection:
+
+--Mike Kelso --
+
+This project exceeded my initial expectations. Having played a considerable amount of Pokemon growing up I'm surprised how easily a similar style of game can be created and it was very satisfying to see the logic of attack, defense, agility, and health come alive and feel like the videogame style battles I'm used to. 
+
+–Elisa Lee–
+
+I had fun making the switch case as it was something similar to what I did in previous projects. It was harder than I thought in the beginning but once we built up momentum, it became easier to expand on the code and complete the desired functions. Debugging was difficult as we didn’t always know what was wrong but it became easier towards the end. 
+
